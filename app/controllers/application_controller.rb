@@ -30,6 +30,7 @@ class ApplicationController < Sinatra::Base
 
   post '/sessions' do
     puts params
+    binding.pry
     redirect '/users/home'
   end
 
